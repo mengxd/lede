@@ -978,6 +978,16 @@ define Device/jcg_y2
 endef
 TARGET_DEVICES += jcg_y2
 
+define Device/jdcloud_luban
+  $(Device/dsa-migration)
+  $(Device/uimage-lzma-loader)
+  IMAGE_SIZE := 15808k
+  DEVICE_VENDOR := jdcloud
+  DEVICE_MODEL := Luban
+  DEVICE_PACKAGES += kmod-mt7915e wpad-openssl uboot-envtools kmod-mmc kmod-sdhci kmod-sdhci-mt7620 kmod-fs-ext4
+endef
+TARGET_DEVICES += jdcloud_luban
+
 define Device/jdcloud_re-sp-01b
   $(Device/dsa-migration)
   IMAGE_SIZE := 27328k
