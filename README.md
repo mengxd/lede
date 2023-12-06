@@ -43,7 +43,7 @@ I18N: [English](README_EN.md) | [简体中文](README.md)
 3. 下载源代码，更新 feeds 并选择配置
 
    ```bash
-   git clone https://github.com/coolsnowwolf/lede
+   git clone https://github.com/mengxd/lede
    cd lede
    ./scripts/feeds update -a
    ./scripts/feeds install -a
@@ -123,7 +123,7 @@ PS > git clone git@github.com:coolsnowwolf/lede.git <your_local_lede_path>
 
    ```bash
    brew unlink awk
-   brew install coreutils diffutils findutils gawk gnu-getopt gnu-tar grep make ncurses pkg-config wget quilt xz
+   brew install coreutils diffutils findutils gawk gnu-getopt gnu-tar grep make ncurses pkg-config wget quilt SDL2 xz
    brew install gcc@11
    ```
 
